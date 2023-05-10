@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+A project dedicated to developing a web application that catalogues, analyses, and visualises 'Hidden Champions' - globally leading yet relatively unknown companies - highlighting their secrets to success and contributions across various industries.
+
 ## Getting Started
 
 First, run the development server:
