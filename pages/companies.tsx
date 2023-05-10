@@ -8,6 +8,7 @@ import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 
 import companies from '../mocks/companies_mock.json'
+import RandomAvatar from '../components/getRandomAvatar'
 
 interface Company {
   id: number
@@ -35,12 +36,13 @@ const CompaniesPage = () => {
         bgcolor: 'background.paper',
       }}
     >
+      <Typography variant='h4'>Hidden Companies:</Typography>
       {(companies as Company[]).map((company) => (
         <React.Fragment key={company.id}>
           <ListItem alignItems='flex-start'>
-            {/* <ListItemAvatar>
-              <Avatar alt='Remy Sharp' src='/static/images/avatar/1.jpg' />
-            </ListItemAvatar> */}
+            <ListItemAvatar>
+              <RandomAvatar />
+            </ListItemAvatar>
             <ListItemText
               primary={company.name}
               secondary={
